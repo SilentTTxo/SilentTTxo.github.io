@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>今天说啥最爱的！</title>
+	<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<link href="http://cdn.bootcss.com/fullPage.js/2.7.9/jquery.fullPage.min.css" rel="stylesheet">
+	<link href="css/TT.css" rel="stylesheet">
+	<script src="http://cdn.bootcss.com/fullPage.js/2.7.9/jquery.fullPage.min.js"></script>
+	<script src="http://cdn.bootcss.com/fullPage.js/2.7.9/vendors/jquery.easings.min.js"></script>
+	<script src="http://cdn.bootcss.com/fullPage.js/2.7.9/vendors/jquery.slimscroll.min.js"></script>
+	<link href="http://fonts.useso.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/ns-default.css" />
+		<link rel="stylesheet" type="text/css" href="css/ns-style-other.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+<body>
+<div id="fullpage">
+		<div class="section">
+			<button id="notification-trigger" class="progress-button">
+				<span class="content">来一个最爱的！</span>
+				<span class="progress"></span>
+			</button>
+		</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+    	$('#fullpage').fullpage({
+    		sectionsColor: ['#333333']
+    	});
+	});
+</script>
+<script src="js/classie.js"></script>
+		<script src="js/notificationFx.js"></script>
+		<script>
+			(function() {
+				var bttn = document.getElementById( 'notification-trigger' );
+
+				// make sure..
+				bttn.disabled = false;
+				
+				bttn.addEventListener( 'click', function() {
+					// simulate loading (for demo purposes only)
+					classie.add( bttn, 'active' );
+					setTimeout( function() {
+
+						classie.remove( bttn, 'active' );
+						
+						// create the notification
+						var imgPath;
+						var content;
+						tt = ["大屁股","胡萝卜","兔兔","大便便","啪啪啪","软软芒果","稗子","打死你","宝贝儿哟","小逗比","小键盘！","傻傻！","大逗比！","小cube","嘟嘟嘟！","大聪明！","咕噜噜","傻豆豆","小欧派","糖","大胸弟","小圆圆","小奶嘴","嘟嘟fu","小猫咪","小肚肚","小杜比","小肚肚","嘟嘟嘟","大逗比！","板凳！","皮皮鲁","孩儿他妈","吧唧哟！","嘟嘟嘟","露露","小可人儿","香蕉人","橘子","烤鱼","棒棒糖","猫猫","么么哒","十八岁欧","榴莲","香草冰激凌","屁屁漆","大橘子","小bra","嘟嘟嘟嘟啊哈哈","不理我少女","小面条","萌萌哦","电磁炉","跳水鱼！","炫迈！","小草莓","小bili","大狗逼","小兔子","忠屁股","小屁股","小饼饼","小屁股哟","海苔！","香皂","美坨坨","小萌萌","小奶嘴","淇淇","小笨笨","萝卜！","小尾巴！","屁屁","小小哦","小波波！","糖油","老婆！","小胡子！","bili2333333","臭臭！","小狗","小骨里","美坨坨","小葫芦丝","小乖！","小乖乖","喵喵","小逗比","小坨坨","人是我","女票票哟！","小宝宝","傻逼小宝宝哟","小宝宝","炒鸡萌的老婆老婆","小傻逼宝宝！","小屁屁！","宝宝","撒比","宝宝哟","小妞宝宝哟","可爱的还有体贴的宝宝哟","可爱的宝宝"];
+						xo = ["韬","小伙伴","小傻瓜","哈利路亚","皮卡丘","要打死我的臭t","大傻逼","亲亲爱的","(๑•ั็ω•็ั๑)萌~","纱布啦","糖糖","小傻","水水","小哦的王��","无牙仔","宝宝晚安","红色毛衣","小芳芳","傻不唧唧臭宝宝","傻不拉几糖","傻不拉几","小刘海","葡萄","黑不溜秋萌","他爸","隆冬呛！","小丽","小踢踢球","胡撸胡撸瓢儿","小香蕉","那坨","小逗比！","小宝贝","粑粑","baymax","温度计","迫击炮！","黑不溜秋讨厌鬼","玻璃胶","傻逼逼！","大臭屁","迫击炮","小踢踢","狗不理","七八","宝贝韬","面面！","bbt啊哈哈哈哈你猜是棒棒糖还是笨笨t","小宝贝","二十岁少年","臭狗比！","死屁股","小tt！","小肚腩","小妹妹！","小浪催！","小婊砸","爱人哟","小氧气！！！","你！","人","兔几爸比！","宝宝","臭臭粑粑！","粑粑！粑粑！","老公！","nico！","小宝宝！","bili喵呜⊙▽⊙","臭宝宝。","小宝贝","papa!","宝宝","小喵喵","程序小老公！","臭臭牙齿宝宝","小公猪","臭臭大喵喵！","糖豆(*¯︶¯*)","大宝宝","苏呸逗","大屁屁","大爷爸爸哟！","傻逼傻逼爸爸♥"];
+						xx = Math.random()*2;
+						if(xx >= 1){
+							imgPath = "img/user1.jpg"
+							content = xo[Math.floor(Math.random()*xo.length)];
+						}
+						else{
+							imgPath = "img/user2.png"
+							content = tt[Math.floor(Math.random()*tt.length)];
+						}
+						var notification = new NotificationFx({
+							message : '<div class="ns-thumb"><img src="'+imgPath+'" style="height: 200px"/></div><div class="ns-content" style="height: 200px;font-size:50px;"><p style="padding-left:200px;padding-top:50px">'+content+'</p></div>',
+							layout : 'other',
+							ttl : 1500,
+							effect : 'thumbslider',
+							type : 'notice', // notice, warning, error or success
+							onClose : function() {
+								bttn.disabled = false;
+							}
+						});
+
+						// show the notification
+						notification.show();
+
+					}, 1200 );
+					
+					// disable the button (for demo purposes only)
+					this.disabled = true;
+				} );
+			})();
+		</script>
+</body>
+</html>
