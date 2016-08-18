@@ -2,29 +2,30 @@
 layout: page
 ---
 
-{% for post in site.posts limit:10 %}
-  <h2 class="post-title">
-    <a href="{{post.url | prepend:site.baseurl | prepend:site.url}}">
-      {{ post.title }}
-    </a>
-  </h3>
-
+{% for post in site.posts %}
+<div class="well banner">
+  <h1 class="post-title">
+    <a href="{{post.url | prepend:site.baseurl | prepend:site.url}}">{{ post.title }}</a>
+  </h1>
   <div class="post-meta">
-  <div class="post-time">
-    <i class="fa fa-calendar"></i>
-    <time>{{ post.date | date_to_string }}</time>
+    <div>
+      <p>
+        {{ post.description }}
+      </p>
+    </div>
   </div>
-  <ul>
-    {% for tag in post.tags %}
-    <li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="dateTag">
+      <div class="post-time">
+      <img src="./css/pics/Time.png">
+      <time>{{ post.date | date:"%D" }}</time>
+    </div>
+    <ul>
+      {% for tag in post.tags %}
+      <li>
+        <a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    </div>
 </div>
-  {% endfor %}
-
-
-<div class="post-footer">
-  <div class="column-full">
-    <h3><a href="{{ '/archive.html' | prepend: site.baseurl | prepend: site.url }}">文章目录</a></h3>
-  </div>
-</div>
+{% endfor %}
