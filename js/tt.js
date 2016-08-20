@@ -19,4 +19,10 @@ $(function(){
 			"border-left-color": color[i%3]
 		})
 	}
+	side = $(".sidebar>h2");
+	for(i=0;i<side.length;i++){
+		$(side[i]).css({
+			"background": color[i%3]
+		});
+	}
 });

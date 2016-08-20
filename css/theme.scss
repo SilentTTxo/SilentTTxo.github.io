@@ -43,7 +43,7 @@ body {
   padding:10px;
   background-color:$baseColor;
   color:white;
-  padding-left: 39%;
+  text-align: center;
 }
 .sidebar li {
   margin-top: .7em;
@@ -157,6 +157,7 @@ ul.social-media {
 }
 
 
+
 h1.post-title {
   padding-top: 10px;
   text-align: left;
@@ -174,6 +175,12 @@ div.post-meta {
   position: relative;
   margin-top: 32px;
   text-align: center;
+}
+.banner {
+  display: block !important;
+  a {
+     text-decoration: none;
+  }
 }
 .banner p{
   font-size: 18px;
