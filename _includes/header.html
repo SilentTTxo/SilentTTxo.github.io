@@ -12,15 +12,26 @@
   <script src="{{site.baseurl | prepend:site.url}}/js/tt.js"></script>
   <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="{{site.baseurl | prepend:site.url}}/css/theme.css" rel="stylesheet">
-  <link href="{{site.baseurl | prepend:site.url}}/css/syntax.css" rel="stylesheet">
   <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/agate.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 </head>
 
 <body>
 
   {% include google-analytics.html %}
   {% include yandex-metrica.html %}
+
+  <script>
+    hljs.initHighlightingOnLoad();
+    $(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">

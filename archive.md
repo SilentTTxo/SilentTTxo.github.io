@@ -55,7 +55,7 @@ title: Blog archive
 </div>
 <div class="well banner shake-slow">
   <h1 class="post-title">
-    <a href="http://cvm.silenttt.top:8080/musicOnline/player" target="_Blank">贪吃蛇</a>
+    <a href="http://115.29.151.29/Snake/" target="_Blank">贪吃蛇</a>
   </h1>
   <div class="post-meta">
     <div>
