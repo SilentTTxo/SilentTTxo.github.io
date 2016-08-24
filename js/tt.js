@@ -1,5 +1,6 @@
 var color = ['#fe7b89','#ff9879','#42c7da']
 $(function(){
+	//颜色处理
 	banner = $(".dateTag");
 	for(i=0;i<banner.length;i++){
 		$(banner[i]).css({
@@ -25,4 +26,17 @@ $(function(){
 			"background": color[i%3]
 		});
 	}
+
+	//去抖动
+	$(".post-title>a").each(function(index, el) {
+		$(el).hover(function() {
+			temp = $(this).parent(".post-title").parent(".banner");
+			temp.removeClass('shake-slow');
+			temp.prepend('<img src="./css/pics/HeyMan.gif" alt="" class="HeyMan">');
+		}, function() {
+			temp = $(this).parent(".post-title").parent(".banner");
+			temp.addClass('shake-slow');
+			$(".HeyMan").remove();
+		});
+	});
 });
