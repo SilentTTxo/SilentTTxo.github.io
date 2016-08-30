@@ -7,7 +7,7 @@ description: 在windows上搭建python环境
 ---
 ***
 
-##1.安装python2.7：
+## 1.安装python2.7：
 
     https://www.python.org/downloads/release/python-2712/
 
@@ -15,7 +15,7 @@ description: 在windows上搭建python环境
 
     path：C:\Python27;C:\Python27\Scripts;
 
-##2.安装pip
+## 2.安装pip
 
 [pip安装文件](http://pan.baidu.com/s/1qYgY3Q8)
 
@@ -23,7 +23,7 @@ description: 在windows上搭建python环境
     
     python get-pip.py
 
-##3.安装lxml
+## 3.安装lxml
 
     http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml
 
@@ -31,7 +31,7 @@ description: 在windows上搭建python环境
 
     pip install 文件名.whl
 
-##4.安装scrapy
+## 4.安装scrapy
 
     pip install scrapy
 
