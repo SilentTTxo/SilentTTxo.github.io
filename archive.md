@@ -70,3 +70,20 @@ title: Blog archive
     </ul>
     </div>
 </div>
+<div class="well banner shake-slow">
+  <h1 class="post-title">
+    <a href="http://115.29.151.29/pokegame/" target="_Blank">戳泡泡赢红包</a>
+  </h1>
+  <div class="post-meta">
+    <div>
+      <p>
+        开发的一个小游戏，之前有个公司有需求，就是戳破泡泡里面有红包，加入手机重力感应.
+      </p>
+    </div>
+  </div>
+  <div class="dateTag">
+    <ul>
+      <li><a href="#">cocos2dx-js</a></li>
+    </ul>
+    </div>
+</div>
