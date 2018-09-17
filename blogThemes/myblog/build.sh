@@ -1,0 +1,2 @@
+cd public
+cp -rf * ../../../
